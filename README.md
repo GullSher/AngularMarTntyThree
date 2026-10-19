@@ -1,64 +1,70 @@
-(```markdown
-<div align="center">
+(# AngularMarTntyThree
 
-# AngularMarTntyThree
-
-**A Modern, Scalable, Component-Driven Web Application**
-
-[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-
-<p align="center">
-  <a href="#overview">Overview</a> •
-  <a href="#key-features">Key Features</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#getting-started">Getting Started</a> •
-  <a href="#project-structure">Project Structure</a> •
-  <a href="#contact">Contact</a>
-</p>
-
-</div>
+A modular, high-performance Angular web application engineered with modern front-end best practices, clean architecture, and responsive user interfaces.
 
 ---
 
-## 📌 Overview
+### Tech Stack
 
-**AngularMarTntyThree** is a high-performance, responsive single-page application (SPA) built using Angular. Engineered with modern front-end best practices, this project showcases reusable modular components, clean routing architecture, robust state handling, and accessible UI layouts designed for optimal user experience across all screen sizes.
-
----
-
-## 🚀 Key Features
-
-- **Component-Driven Architecture:** Modular, decoupled components structured for maintainability and scalability.
-- **Responsive & Accessible UI:** Mobile-first layout engineered with semantic HTML5 and adaptive styling.
-- **Client-Side Routing:** Dynamic navigation with Angular Router for smooth, uninterrupted transitions.
-- **Optimized Performance:** Fast load times utilizing modern Angular compilation, lazy loading, and asset optimization.
-- **Cross-Browser Compatibility:** Consistent behavior and presentation across Chrome, Firefox, Safari, and Edge.
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 ---
 
-## 🛠️ Tech Stack
+## Overview
 
-- **Framework:** [Angular](https://angular.io/)
-- **Core Languages:** HTML5, TypeScript, JavaScript
-- **Styling:** CSS3 / SCSS (Modern Flexbox & Grid layouts)
-- **Tooling:** Angular CLI, Node.js, npm
+**AngularMarTntyThree** is a component-driven single-page application (SPA) focused on clean code separation, scalable template architecture, and seamless cross-device performance. Designed for maintainability and extensibility, this project demonstrates structured state management, routing, and modern UI engineering standards.
 
 ---
 
-## ⚙️ Getting Started
+## Key Features
 
-Follow these steps to set up and run the project locally.
+- **Component-Driven Architecture:** Reusable, encapsulated Angular components ensuring separation of concerns.
+- **Dynamic & Semantic UI:** Structured HTML5 templates optimized for accessibility (a11y) and SEO.
+- **Responsive Layout:** Adaptive styling tailored for desktop, tablet, and mobile displays.
+- **Modular Routing:** Lazy loading and efficient route-handling for optimized load times.
+- **Scalable Service Layer:** Centralized API communication and data flow management.
+
+---
+
+## Project Structure
+
+```text
+AngularMarTntyThree/
+├── src/
+│   ├── app/
+│   │   ├── components/       # Reusable UI components
+│   │   ├── services/         # Business logic and API handling
+│   │   ├── models/           # TypeScript interfaces and types
+│   │   ├── app-routing.module.ts
+│   │   └── app.component.*
+│   ├── assets/               # Static assets (images, icons, fonts)
+│   ├── environments/         # Environment configurations
+│   ├── index.html            # Main entry point
+│   ├── styles.css            # Global stylesheets
+│   └── main.ts               # Application bootstrapper
+├── angular.json              # Angular CLI configuration
+├── package.json              # Dependencies and scripts
+└── tsconfig.json             # TypeScript configuration
+```
+
+---
+
+## Getting Started
 
 ### Prerequisites
 
-Ensure you have the following installed on your machine:
-- [Node.js](https://nodejs.org/) (v16.x or later recommended)
-- [npm](https://www.npmjs.com/) (v8.x or later)
-- [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
+Ensure you have the following installed on your local development machine:
+
+- **Node.js** (v16.x or higher recommended): [Download Node.js](https://nodejs.org/)
+- **npm** (v8.x or higher)
+- **Angular CLI**: Install globally via npm:
+  ```bash
+  npm install -g @angular/cli
+  ```
 
 ### Installation
 
@@ -76,64 +82,33 @@ Ensure you have the following installed on your machine:
 3. **Start the local development server:**
    ```bash
    ng serve
-   # or
-   npm start
    ```
 
 4. **View the application:**
-   Navigate your browser to:
-   ```
-   http://localhost:4200/
-   ```
+   Navigate your browser to `http://localhost:4200/`. The app will automatically reload if you change any source files.
 
-### Production Build
+### Build for Production
 
-To compile a production-ready build:
+To compile and optimize the application for production deployment:
 
 ```bash
 ng build --configuration production
 ```
-The compiled output will be generated inside the `dist/` directory.
+
+Build artifacts will be stored in the `dist/` directory.
 
 ---
 
-## 📂 Project Structure
-
-```text
-AngularMarTntyThree/
-├── src/
-│   ├── app/                 # Application components, modules, and routing
-│   │   ├── components/      # Reusable UI components
-│   │   ├── services/        # Business logic & data handling services
-│   │   ├── app-routing.module.ts
-│   │   ├── app.component.html
-│   │   ├── app.component.ts
-│   │   └── app.module.ts
-│   ├── assets/              # Static assets (images, icons, etc.)
-│   ├── environments/        # Environment configurations (dev/prod)
-│   ├── index.html           # Main HTML entry point
-│   ├── main.ts              # Application bootstrap entry point
-│   └── styles.scss          # Global application styles
-├── angular.json             # Angular CLI workspace configuration
-├── package.json             # Project dependencies and scripts
-└── tsconfig.json            # TypeScript compiler configuration
-```
-
----
-
-## 👨‍💻 Author & Contact
+## Author & Contact
 
 **Gull Sher**  
 *Full Stack Developer*
 
-Looking to build scalable web applications or collaborate on exciting projects? Let's connect:
-
-- 🌐 **Website:** [codingbelt.com](https://codingbelt.com)
-- 💬 **WhatsApp:** [+92 316 1457292](https://wa.me/923161457292)
+- **Website:** [codingbelt.com](https://codingbelt.com)
+- **WhatsApp:** [+92 316 1457292](https://wa.me/923161457292)
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the [MIT License](LICENSE).
-```).
+This project is open-source and available under the [MIT License](LICENSE).).
